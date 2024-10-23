@@ -1,0 +1,103 @@
+/* Header container styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #e4b3b3; 
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* H1 Styling for the Logo/Title */
+.h1 {
+  font-size: 1.5rem; /* Reduced font size */
+  font-family: 'Times New Roman', Times, serif;
+  color: #974040; /* Darker text color */
+  font-weight: bold;
+}
+
+/* Navigation Styling */
+.nav {
+  display: flex; 
+  align-items: center; 
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+  gap: 60px; 
+  margin: 0; 
+  padding: 15px; 
+  align-items: center; 
+}
+
+/* Navigation links */
+.li {
+  display: inline-block;
+}
+
+.Link {
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: #333; 
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.Link:hover {
+  color: #974040; /* Tomato color on hover */
+}
+
+/* Search Bar and Icon */
+.input {
+  padding: 8px; 
+  width: 180px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  margin-right: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #974040; /* Tomato border on focus */
+}
+
+.fasearch {
+  color: #333;
+  cursor: pointer;
+  margin-right: 8px; 
+}
+
+/* Button styling */
+.button {
+  padding: 8px 16px; /* Reduced button padding */
+  background-color: #974040; /* Tomato color for button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #813030; /* Darker shade on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .button {
+    margin-top: 10px;
+  }
+}
