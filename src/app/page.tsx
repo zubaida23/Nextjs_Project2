@@ -1,14 +1,11 @@
 import React from "react";
-import Header from "@/components/header/page";
-import Footer from "@/components/footer/page";
-
+import Hero from "@/app/hero/page";
 
 export default function Home() {
   return (
     <>
    <main>
-    <Header></Header>
-    <Footer></Footer>
+    <Hero></Hero>
    </main>
     </>
   );
